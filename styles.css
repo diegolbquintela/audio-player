@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  /* flex-direction: column; */
+  gap: 0;
+}
+
+/* NAVBAR */
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  /* position: relative; */
+  gap: 10%;
+}
+
+.logo {
+  font-size: 2rem;
+  flex: 30%;
+}
+
+/* .nav--button {
+
+} */
+
+/* MAIN */
+
+.main {
+  background-color: green;
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+.main--info {
+  background-color: gray;
+  color: white;
+  flex: 1 auto 30%;
+  display: flex;
+  width: 100%;
+}
+
+.main--info-image {
+  width: 100px;
+  background-color: black;
+  flex: 1 auto 50%;
+  height: 250px;
+  width: 300px;
+}
+
+/* grid song list */
+
+/* song titles container */
+.main--songlist {
+  background-color: turquoise;
+  /* display: grid;
+  grid-template-columns: 100px 100px 100px 100px 100px; */
+}
+
+/* song description  */
+.songlist-description--container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.songlist-description {
+}
+
+/* song list */
+.songlist-songs--container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.songlist-songs {
+}
+
+/* FOOTER */
+footer {
+  flex: 1 auto auto;
+}
+
+.footer {
+  position: sticky;
+
+  background-color: black;
+  color: white;
+}
