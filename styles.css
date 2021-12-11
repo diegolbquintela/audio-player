@@ -6,8 +6,11 @@
 
 body {
   width: 100%;
-  /* flex-direction: column; */
-  gap: 0;
+  height: 100vh;
+  flex-direction: column;
+  display: flex;
+  /* gap: 5rem; needs fix */
+  justify-content: space-between;
 }
 
 /* NAVBAR */
@@ -38,6 +41,7 @@ body {
   color: black;
   display: flex;
   flex-direction: column;
+  flex-basis: 100%;
 }
 
 .main--info {
@@ -90,7 +94,9 @@ footer {
 
 .footer {
   position: sticky;
-
+  bottom: 0;
   background-color: black;
   color: white;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
