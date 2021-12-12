@@ -23,6 +23,7 @@ body {
   color: white;
   /* position: relative; */
   gap: 10%;
+  padding: 0.5rem 1rem;
 }
 
 .logo {
@@ -37,11 +38,12 @@ body {
 /* MAIN */
 
 .main {
-  background-color: green;
+  background-color: white;
   color: black;
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
+  padding: 1rem;
 }
 
 .main--info {
@@ -64,7 +66,6 @@ body {
 
 /* song titles container */
 .main--songlist {
-  background-color: turquoise;
   /* display: grid;
   grid-template-columns: 100px 100px 100px 100px 100px; */
 }

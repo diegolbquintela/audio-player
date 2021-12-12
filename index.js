@@ -5,7 +5,7 @@ const song1 = {
   title: "Parker's Mood (New take 1)",
   artist: "Charlie Parker",
   album: "Charlie Parker Memorial vol 1",
-  duration: 3.27,
+  duration: "3:27",
 };
 
 const song2 = {
@@ -13,7 +13,7 @@ const song2 = {
   title: "Just Friends",
   artist: "Charlie Parker",
   album: "April in Paris: The Genius of Charlie Parker vol 2",
-  duration: 3.32,
+  duration: "3:32",
 };
 
 const song3 = {
@@ -21,10 +21,26 @@ const song3 = {
   title: "Kim (alternate take)",
   artist: "Charlie Parker Quartet",
   album: "Charlie Parker",
-  duration: 2.58,
+  duration: "2:58",
 };
 
-const songs = [song1, song2, song3];
+const song4 = {
+  id: 4,
+  title: "Footprints",
+  artist: "Miles Davis",
+  album: "Miles Smiles",
+  duration: "9:49",
+};
+
+const song5 = {
+  id: 5,
+  title: "Nefertiti",
+  artist: "Miles Davis",
+  album: "Nefertiti",
+  duration: "7:51",
+};
+
+const songs = [song1, song2, song3, song4, song5];
 
 const containerSongs = document.querySelector(".container-test");
 
