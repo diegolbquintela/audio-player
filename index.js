@@ -64,17 +64,16 @@ containerSongs.innerHTML = "";
 
 // display songs
 
-songs.forEach((song) => {
-  const html = `
-    <p class="songlist-songs song-id">${song.id}</p>
-    <p class="songlist-songs song-title">${song.title}</p>
-    <p class="songlist-songs song-artist">${song.artist}</p>
-    <p class="songlist-songs song-album">${song.album}</p>
-    <p class="songlist-songs song-duration">${song.duration}</p>
-    `;
+// songs.forEach((song) => {
+//   const html = `
+//     <p class="songlist-songs song-title">${song.title}</p>
+//     <p class="songlist-songs song-artist">${song.artist}</p>
+//     <p class="songlist-songs song-album">${song.album}</p>
+//     <p class="songlist-songs song-duration">${song.duration}</p>
+//     `;
 
-  containerSongs.insertAdjacentHTML("afterbegin", html);
-});
+//   containerSongs.insertAdjacentHTML("afterbegin", html);
+// });
 
 //buttons functionality
 
@@ -94,17 +93,6 @@ buttonRandom.addEventListener("click", (e) => {
       array[j] = temp;
     }
   }
-  songs.forEach((song) => {
-    const html = `
-      <p class="songlist-songs song-id">${song.id}</p>
-      <p class="songlist-songs song-title">${song.title}</p>
-      <p class="songlist-songs song-artist">${song.artist}</p>
-      <p class="songlist-songs song-album">${song.album}</p>
-      <p class="songlist-songs song-duration">${song.duration}</p>
-      `;
-
-    containerSongs.insertAdjacentHTML("afterbegin", html);
-  });
 });
 
 // need to add an updateUi function
