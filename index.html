@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title></title>
+    <title>Classic Jazz Player</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./styles.css" />
@@ -15,6 +15,10 @@
       href="https://fonts.googleapis.com/css2?family=Satisfy&family=Tajawal:wght@300&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
   </head>
   <body>
     <!-- <div class="cover-image">
@@ -24,11 +28,25 @@
     <article class="player-container">
       <h1>Classic Jazz</h1>
       <div class="img-container">
-        <img src="images.jpeg" alt="Album Cover" />
+        <img src="./images/images.jpeg" alt="Album Cover" />
       </div>
       <h2 id="title">Parker's Mood (New take 1)</h2>
       <h3 id="artist">Charlie Parker</h3>
-      <audio src="" controls></audio>
+      <!-- <audio src="" controls></audio> -->
+      <!-- progress bar -->
+      <div class="progress-container" id="progress-container">
+        <div class="progress" id="progress"></div>
+        <div class="duration-wrapper">
+          <span id="current-time">0:00</span>
+          <span id="duration">3:27</span>
+        </div>
+      </div>
+      <!-- controls -->
+      <div class="player-controls">
+        <i class="fas fa-light fa-backward" id="prev" title="Previous"></i>
+        <i class="fas fa-play-circle main-button" id="play" title="Play"></i>
+        <i class="fas fa-light fa-forward" id="next" title="Next"></i>
+      </div>
     </article>
 
     <script src="./index.js" async defer></script>
