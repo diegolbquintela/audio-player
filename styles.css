@@ -39,15 +39,16 @@ body {
 .img-container {
   position: relative;
   top: -1rem;
-  left: 4%;
-  width: 55vh;
+  left: 15%;
+  width: 70%;
+  height: 40%;
   border-radius: 20px;
 }
 
 .img-container img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 h1,
@@ -121,7 +122,7 @@ h3 {
 }
 
 .fas:hover {
-  filter: brightness(75%)
+  filter: brightness(75%);
 }
 
 .main-button {
@@ -153,6 +154,5 @@ h3 {
   .player-controls {
     top: 15px;
     left: 100px;
-    \
   }
 }
