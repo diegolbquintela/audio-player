@@ -92,8 +92,9 @@ h3 {
   background: #7d7626;
   border-radius: 5px;
   height: 100%;
-  /* change this to show progress */
-  width: 10%;
+
+  width: 0%; /* Progress bar feature*/
+
   transition: width 0.1s linear;
 }
 

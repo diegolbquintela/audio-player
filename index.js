@@ -54,6 +54,8 @@ const image = document.querySelector("img");
 const title = document.querySelector("#title");
 const artist = document.querySelector("#artist");
 const music = document.querySelector("audio");
+const progressBar = document.querySelector("#progress-container");
+const progress = document.querySelector("#progress");
 const previousBtn = document.querySelector("#prev");
 const playBtn = document.querySelector("#play");
 const nextBtn = document.querySelector("#next");
@@ -101,6 +103,18 @@ nextBtn.addEventListener("click", () => {
   songIndex > songs.length - 1 ? (songIndex = 0) : songIndex++;
   loadSongs(songs[songIndex]);
   playSong();
+});
+
+// update progress bar
+music.addEventListener("timeupdate", (e) => {
+  if (isPlaying) {
+    console.log(e);
+    const { duration, currentTime } = e.target;
+    console.log(duration, currentTime);
+
+    let progressPercent = (currentTime / duration) * 100;
+    progress.style.width = `${progressPercent}%`;
+  }
 });
 
 /* Randomize array in-place using Durstenfeld shuffle algorithm */
